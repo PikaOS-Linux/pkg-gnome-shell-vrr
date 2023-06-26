@@ -22,9 +22,11 @@ CONFFLAGS += -Dtests=false
 endif
 
 override_dh_auto_clean:
-	echo "dh_auto_test disabled!"
+	true
+
 override_dh_clean:
-	echo "dh_auto_test disabled!"
+	true
+
 override_dh_auto_configure:
 		GSETTINGS_SCHEMA_DIR=/opt/mutter-vrr/share/glib-2.0/schemas/:$(GSETTINGS_SCHEMA_DIR) PKG_CONFIG_PATH=/opt/mutter-vrr/lib/x86_64-linux-gnu/pkgconfig:$(PKG_CONFIG_PATH) LD_LIBRARY_PATH=/opt/mutter-vrr/lib/x86_64-linux-gnu:/opt/mutter-vrr/lib/x86_64-linux-gnu/mutter-11:/opt/mutter-vrr/lib/x86_64-linux-gnu/mutter-11/plugins:$(LD_LIBRARY_PATH) PATH=/opt/mutter-vrr/bin:$(PATH) dh_auto_configure -- \
 		--prefix=/opt/mutter-vrr \
@@ -33,10 +35,10 @@ override_dh_auto_configure:
 		$(CONFFLAGS)
 
 override_dh_makeshlibs:
-	echo "dh_makeshlibs disabled!"
+	true
 
 override_dh_shlibdeps:
-	echo "dh_shlibdeps disabled!"
+	true
 
 override_dh_auto_test:
-	echo "dh_auto_test disabled!"
+	true

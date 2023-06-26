@@ -11,7 +11,7 @@ cd ./gnome-shell-vrr
 apt-get build-dep ./ -y
 
 # Build package
-LOGNAME=root dh_make --createorig -y -l -p gnome-shell-vrr_43.1
+LOGNAME=root dh_make --createorig -y -l -p gnome-shell-vrr_44.2
 dpkg-buildpackage --no-sign
 
 # Move the debs to output

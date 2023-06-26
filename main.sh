@@ -1,6 +1,6 @@
 DEBIAN_FRONTEND=noninteractive
 
-apt install gnome-pkg-tools
+apt install gnome-pkg-tools -y
 
 # Clone Upstream
 git clone https://gitlab.gnome.org/GNOME/gnome-shell -b 44.2 gnome-shell-vrr

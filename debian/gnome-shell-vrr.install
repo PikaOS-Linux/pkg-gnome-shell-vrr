@@ -4,7 +4,6 @@ opt/mutter-vrr/bin/gnome-shell-extension-tool
 opt/mutter-vrr/bin/gnome-shell-perf-tool
 opt/mutter-vrr/lib/gnome-shell
 opt/mutter-vrr/libexec
-opt/mutter-vrr/share/applications/evolution-calendar.desktop
 opt/mutter-vrr/share/applications/org.gnome.Shell*.desktop
 opt/mutter-vrr/share/bash-completion/completions/gnome-extensions
 opt/mutter-vrr/share/dbus-1/services

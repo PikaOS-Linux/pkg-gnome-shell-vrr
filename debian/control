@@ -87,6 +87,7 @@ Vcs-Git: https://salsa.debian.org/gnome-team/gnome-shell.git -b ubuntu/master
 Vcs-Browser: https://salsa.debian.org/gnome-team/gnome-shell/tree/ubuntu/master
 
 Package: gnome-shell-vrr
+Architecture: linux-any
 Depends: gir1.2-accountsservice-1.0,
          gir1.2-adw-1,
          gir1.2-atk-1.0,

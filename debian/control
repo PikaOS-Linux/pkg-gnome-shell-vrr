@@ -158,6 +158,7 @@ Breaks: gnome-shell-extension-appindicator (<< 50),
         gnome-shell-extensions (<< 40.0~),
 Provides: notification-daemon,
           polkit-1-auth-agent
+Description: Gnome shell but actually good
 
 Package: gnome-shell-common-vrr
 Architecture: all

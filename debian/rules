@@ -4,7 +4,7 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 export DEB_LDFLAGS_MAINT_APPEND = -Wl,-O1 -Wl,-z,defs
 
 %:
-	dh $@ --with bash_completion
+	dh $@
 
 CONFFLAGS =
 
@@ -21,6 +21,10 @@ else
 CONFFLAGS += -Dtests=false
 endif
 
+override_dh_auto_clean:
+	echo "dh_auto_test disabled!"
+override_dh_clean:
+	echo "dh_auto_test disabled!"
 override_dh_auto_configure:
 		GSETTINGS_SCHEMA_DIR=/opt/mutter-vrr/share/glib-2.0/schemas/:$(GSETTINGS_SCHEMA_DIR) PKG_CONFIG_PATH=/opt/mutter-vrr/lib/x86_64-linux-gnu/pkgconfig:$(PKG_CONFIG_PATH) LD_LIBRARY_PATH=/opt/mutter-vrr/lib/x86_64-linux-gnu:/opt/mutter-vrr/lib/x86_64-linux-gnu/mutter-11:/opt/mutter-vrr/lib/x86_64-linux-gnu/mutter-11/plugins:$(LD_LIBRARY_PATH) PATH=/opt/mutter-vrr/bin:$(PATH) dh_auto_configure -- \
 		--prefix=/opt/mutter-vrr \

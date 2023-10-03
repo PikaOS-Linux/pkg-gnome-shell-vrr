@@ -1,7 +1,7 @@
 DEBIAN_FRONTEND=noninteractive
 
-apt install gnome-pkg-tools -y
 apt-mark hold pbuilder
+apt install gnome-pkg-tools -y
 
 # Clone Upstream
 git clone https://gitlab.gnome.org/GNOME/gnome-shell -b 45.0 gnome-shell-vrr

@@ -1,7 +1,7 @@
 opt/mutter-vrr/bin/gnome-extensions
 opt/mutter-vrr/bin/gnome-shell
 opt/mutter-vrr/bin/gnome-shell-extension-tool
-opt/mutter-vrr/bin/gnome-shell-perf-tool
+opt/mutter-vrr/bin/gnome-shell-test-tool
 opt/mutter-vrr/lib/gnome-shell
 opt/mutter-vrr/libexec
 opt/mutter-vrr/share/applications/org.gnome.Shell*.desktop
